@@ -22,7 +22,7 @@ feel free to remove this entire section.**
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Stephanie0905/Tip_calculator.git)
-- Live Site URL: [Add live site URL here](https://Stephanie0905.github.io/Tip_calculator.git/)
+- Live Site URL: [Add live site URL here](https://Stephanie0905.github.io/Tip_calculator/)
 
 ## My process
 
