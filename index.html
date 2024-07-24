@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="bg">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+
+    <div class="card__bill container">
+      <div class="row">
+        <form class="form__bill">
+          <div class="bill__input">
+            <label for="bill">Bill</label>
+            <input type="number" name="bill" id="bill">
+          </div>
+
+          <div class="tip__categ">
+            <label for="tips">Select Tip %</label>
+            <div class="tips">
+              <button type="button" class="tip" >5&#37;</button>
+              <button type="button" class="tip" >10&#37;</button>
+              <button type="button" class="tip active-tip" >15&#37;</button>
+              <button type="button" class="tip" >25&#37;</button>
+              <button type="button" class="tip" >50&#37;</button>
+              <input type="number" name="custom" id="custom" placeholder="Custom" class="custom">
+            </div>
+          </div>
+
+          <div class="people">
+            <div class="label_people">
+              <label for="tip__people">Number of People</label>
+            <small id="people_error">Can't be zero</small>
+            </div>
+            
+            <input type="number" name="tip__people" id="tip__people">
+          </div>
+        </form>
+      </div>
+      <div class="row total">
+        <div class="col__tip">
+          <div class="tip__text">
+            <span >Tip Amount</span>
+            <p>/ person</p>
+          </div>
+
+          <h3 id="total_bill">$ 0.00</h3>
+        </div>
+        <div class="col__tip">
+          <div class="tip__text">
+            <span >Total</span>
+            <p>/ person</p>
+          </div>
+
+          <h3 id="total_person">$ 0.00</h3>
+        </div>
+
+        <div class="reset" id="reset">Reset</div>
+      </div>
+    </div>
+  </main>
+
+ 
+  <script src="main.js"></script>
+</body>
+</html>

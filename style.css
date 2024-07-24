@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+/* Primary */
+
+--Strong-cyan: hsl(172, 67%, 45%);
+
+/* Neutral */
+
+--Very-dark-cyan: hsl(183, 100%, 15%);
+--Dark-grayish-cyan: hsl(186, 14%, 43%);
+--Grayish-cyan: hsl(184, 14%, 56%);
+--Light-grayish-cyan: hsl(185, 41%, 84%);
+--Very-light-grayish-cyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+
+/* Font size */
+--input_fs: 1.5rem;
+--space: 'Space Mono', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--space);
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Strong-cyan);
+}
+
+span {
+    font-size: 1rem;
+}
+
+p {
+    font-size: .8rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Very-dark-cyan);
+}
+
+small {
+    position: relative;
+    color: red;
+    display: none;
+}
+
+button {
+    border-radius: .3rem;
+    padding: .5rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: var(--input_fs);
+    cursor: pointer;
+}
+
+button:first-child, button:nth-child(2),
+button:nth-child(3), button:nth-child(4),
+button:nth-child(5) {
+    background: var(--Very-dark-cyan);
+    color: var(--White);
+}
+
+.custom {
+    width: 100%;
+    border-radius: .3rem;
+    padding: .5rem;
+  /* display: inline-block; */
+  border-radius: 6px;
+  box-sizing: border-box;
+  /* background: var(--Very-light-grayish-cyan); */
+  background: var(--Dark-grayish-cyan);
+  border: none;
+  outline: none;
+  font-size: var(--input_fs);
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+  text-align: right;
+}
+
+.custom::placeholder {
+    color: var(--Very-dark-cyan);
+}
+
+button::after, button:hover {
+    background: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px 12px 40px;  
+    margin: 8px 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: var(--Very-light-grayish-cyan);
+  border: none;
+  outline: none;
+  font-size: var(--input_fs);
+  color: var(--Very-dark-cyan);
+  font-weight: 700;
+  text-align: right;
+}
+
+
+.reset {
+    border-radius: .3rem;
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    background: var(--Strong-cyan);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--Very-dark-cyan);
+    cursor: pointer;
+    text-align: center;
+    font-size: var(--input_fs);
+}
+
+.bg {
+    /* border: 2px solid red; */
+    background: var(--Light-grayish-cyan);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.logo {
+    padding: 2rem .5rem;
+}
+
+.card__bill {
+    /* border: 2px solid black; */
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background: var(--White);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* .row {
+    border: 2px solid orange;
+} */
+
+/* grid elements */
+
+.form__bill {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: .5rem;
+}
+
+.bill__input input {
+    background-image: url('./images/icon-dollar.svg');
+    background-position: .8rem 1rem; 
+    background-repeat: no-repeat;
+}
+
+.people input {
+    background-image: url('./images/icon-person.svg');
+    background-position: .8rem 1rem; 
+    background-repeat: no-repeat;
+}
+
+.label_people {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 2px solid red; */
+    gap: 1rem;
+    align-items: center;
+}
+
+.tips .active-tip {
+    background-color: var(--Strong-cyan);
+    cursor: pointer;
+ }
+
+/* result  */
+.total {
+    border-radius: 1rem;
+    background: var(--Very-dark-cyan);
+    padding: 2.2rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.col__tip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tip__text span {
+    color: var(--Light-grayish-cyan);
+    font-weight: 700;
+}
+
+.tip__text p {
+    color: var(--Grayish-cyan);
+    font-weight: 700;
+}
+ @media screen and (min-width: 600px) {
+    .bg {
+       padding: 3rem 5rem;
+    }
+
+    .card__bill {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 1rem;
+    }
+
+    .total {
+        padding: 3.2rem 1.5rem 1rem 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .reset  {
+        margin-top: 7rem;
+    }
+
+   
+ }
